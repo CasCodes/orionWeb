@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+html {
+  /*background: linear-gradient(to bottom right, DarkSlateGray, black) fixed;*/
+  background: #17181F;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body{
+  margin: 0;
+}
+.navbar {
+    border-radius: 0px;
+    overflow: hidden;
+    background-color: transparent; 
+    z-index: 1;
+    width: 100%;
+}
+.navbar a {
+    float: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 17.69px;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+}
+a:hover {
+    color: #E5AF3F;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.blurry {
+  background-color: rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+ -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+p {
+  font-family: 'Oswald';
+  color: gray;
+  text-align: right;
+  
+}
+
+h1 {
+  font-family: 'Druk X';
+  background: -webkit-linear-gradient(left,#008B8B , #FFA500); /*008B8B*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-top: 60px;
+  font-style: bold;
+  font-size: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+header {
+  padding-right: 50%;
+  padding-left: 50%;
+  position: relative;
+  z-index: 0;
+}
+
+@font-face {
+  font-family: "Druk X";
+  src: url("/Fonts/Druk-XCondSuper.otf");
+}
+
+main {
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
