@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
+.yellow{
+  color:#E5AF3F;
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -21,7 +25,6 @@ body{
     border-radius: 0px;
     overflow: hidden;
     background-color: transparent; 
-    z-index: 1;
     width: 100%;
 }
 .navbar a {
@@ -38,6 +41,7 @@ a:hover {
 }
 .sticky {
     position: fixed;
+    z-index: 8;
     top: 0;
     width: 100%;
 }
@@ -62,18 +66,118 @@ p {
 }
 
 h1 {
+  /*font-family: 'Oswald';*/
   font-family: 'Druk X';
+  /*font-family: 'Teko';*/
+  /*font-family: 'Aldrich';*/
   background: -webkit-linear-gradient(left,#008B8B , #FFA500); /*008B8B*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   padding-top: 60px;
-  font-style: bold;
+  font-style: regular;
   font-size: 50px;
-  margin: 0;
-  display: flex;
+  margin: auto;
+  display: block;
   justify-content: center;
 }
+
+h2{
+  position: relative;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #008B8B;
+  z-index: 2;
+}
+
+h3{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  color: #5C5C5C;
+}
+
+.line{
+  position: relative;
+  width:85%;
+  height:2.5px;
+  background: #5C5C5C;
+  z-index: 1;
+  top: 40px;
+  margin: auto;
+  display: block;
+  justify-content: center; 
+  border-radius: 25px; 
+}
+
+.contact_btn{
+  background-color: #008B8B;
+  border-radius: 25px;
+  margin: auto;
+  display: block;
+  justify-content: center;
+  width: 50%;
+  height: 30px;
+  border: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.contact_btn:hover{
+  background-color: aqua;
+}
+
+.contact_btn:active{
+  background-color: rgb(1, 146, 146);
+}
+
+.sub-rect{
+  position: relative;
+  width: 260px;
+  height: 20px;
+  top: -35px;
+  background: #242424;
+  z-index: 1;
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+  justify-content: center;
+}
+
+.sub-rect2{
+  position: relative;
+  width: 260px;
+  height: 10px;
+  left: 30px;
+  top: -20px;
+  background: #242424;
+  z-index: 1;
+  border-radius: 2.5px;
+  margin: auto;
+  display: block;
+  justify-content: center;
+}
+
+.sub-rect3{
+  position: relative;
+  width: 200px;
+  height: 260px;
+  top: -55px;
+  background: #1a1a1a;
+  left:100px;
+  z-index: 1;
+  border-radius: 25px;
+  margin: auto;
+  display: block;
+  justify-content: center;
+}
+
+.container{
+    display:inline-flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
 header {
   padding-right: 50%;
   padding-left: 50%;
@@ -81,13 +185,36 @@ header {
   z-index: 0;
 }
 
+.block-icon{
+  display: block;
+  justify-content: start; 
+}
+
 @font-face {
   font-family: "Druk X";
   src: url("/Fonts/Druk-XCondSuper.otf");
+}
+
+.Row {
+  display: table;
+  width: 100%; /*Optional*/
+  border-spacing: 10px; /*Optional*/
+  table-layout: unset;
+}
+.Column {
+  display: table-cell;
 }
 
 main {
   text-align: center;
   position: relative;
   z-index: 0;
+}
+
+footer{
+  position:relative; 
+  top: 0; 
+  bottom:0; 
+  left:0; 
+  right:0;
 }
