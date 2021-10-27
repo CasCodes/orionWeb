@@ -9,5 +9,7 @@ Installation:
 5. Now download the repo and replace style.css ,  index.html and main.js with the once of the repo, as well as add the remaining files.
 6. At this point you can go to localhost:3000 in your browser and should see the site. If not, give up and cry.
 
+***
+Design sheet: https://www.figma.com/file/wVaeYQqSjPGtAc6TkbNhQk/ORION?node-id=0%3A1
 
 ![image](https://github.com/CasCodes/orionWeb/blob/main/orionPreview.png?raw=true)
