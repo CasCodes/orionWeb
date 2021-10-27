@@ -3,7 +3,7 @@ Website of the Orion development group
 
 Installation:
 1. Open a text editor and terminal (or the internal terminal in vscode)
-2. run ``` npm init @vitejs/app ``` and just press tab when it asks you something (we'll use vanilla js)
+2. run ``` npm init @vitejs/app ``` and just press enter when it asks you something (we'll use vanilla js). Then,  cd into the newly created directory.
 3. run ``` npm install three ``` 
 4. run ``` npm run dev ``` (if that doesn't work, run ``` npm install``` and then try again)
 5. Now download the repo and replace style.css ,  index.html and main.js with the once of the repo, as well as add the remaining files.
