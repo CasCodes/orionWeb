@@ -9,6 +9,7 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
+  
 }
 
 html {
@@ -17,10 +18,13 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body{
-  margin: 0;
+  margin: 0px;
 }
+
 .navbar {
     border-radius: 0px;
     overflow: hidden;
@@ -29,7 +33,7 @@ body{
 }
 .navbar a {
     float: center;
-    font-family: monospace;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 17.69px;
     color: gray;
@@ -90,8 +94,10 @@ h2{
 }
 
 h3{
+  position: relative;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
   color: #5C5C5C;
+
 }
 
 .line{
@@ -134,7 +140,7 @@ h3{
   width: 260px;
   height: 20px;
   top: -35px;
-  background: #242424;
+  background: #1a1a1a;
   z-index: 1;
   border-radius: 5px;
   margin: auto;
@@ -148,7 +154,7 @@ h3{
   height: 10px;
   left: 30px;
   top: -20px;
-  background: #242424;
+  background: #1a1a1a;
   z-index: 1;
   border-radius: 2.5px;
   margin: auto;
@@ -159,7 +165,7 @@ h3{
 .sub-rect3{
   position: relative;
   width: 200px;
-  height: 260px;
+  height: auto;
   top: -55px;
   background: #1a1a1a;
   left:100px;
