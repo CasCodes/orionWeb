@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 .yellow{
-  color:#E5AF3F;
+  color:#2FB69D;
 }
 
 canvas {
@@ -74,7 +74,7 @@ h1 {
   font-family: 'Druk X';
   /*font-family: 'Teko';*/
   /*font-family: 'Aldrich';*/
-  background: -webkit-linear-gradient(left,#008B8B , #FFA500); /*008B8B*/
+  background: -webkit-linear-gradient(left,#B62F2F , #2FB69D); /*008B8B*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -89,7 +89,7 @@ h1 {
 h2{
   position: relative;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: #008B8B;
+  color: #B62F2F;
   z-index: 2;
 }
 
@@ -106,7 +106,6 @@ h3{
   height:2.5px;
   background: #5C5C5C;
   z-index: 1;
-  top: 40px;
   margin: auto;
   display: block;
   justify-content: center; 
@@ -114,7 +113,7 @@ h3{
 }
 
 .contact_btn{
-  background-color: #008B8B;
+  background-color: #B62F2F;
   border-radius: 25px;
   margin: auto;
   display: block;
@@ -128,11 +127,11 @@ h3{
 }
 
 .contact_btn:hover{
-  background-color: aqua;
+  background-color: #ec3b3b;
 }
 
 .contact_btn:active{
-  background-color: rgb(1, 146, 146);
+  background-color: #8a2323;
 }
 
 .sub-rect{
