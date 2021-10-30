@@ -7,7 +7,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 const scene = new THREE.Scene();
 
-// Add "eyeball camera", viewing in 75 deg. angle, aspect ratio (based of browser window), view frustum
+// Add "eyeball CAMERA", viewing in 75 deg. angle, aspect ratio (based of browser window), view frustum
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 2000 );
 
 const renderer = new THREE.WebGLRenderer({
@@ -15,6 +15,7 @@ const renderer = new THREE.WebGLRenderer({
   alpha: true,
 });
 
+// scaling and positioning
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight);
 renderer.setClearColor(0xfffff, 0);
@@ -22,10 +23,10 @@ renderer.setClearColor(0xfffff, 0);
 camera.position.setZ(6);
 camera.position.setY(8);
 
-// network 3d model
+// 3d model
 const loader = new GLTFLoader();
 
-loader.load( 'planetColored.glb', function ( gltf ) {
+loader.load( 'recources/planetColored.glb', function ( gltf ) {
   
   gltf.scene.rotation.y += 0.8;
   gltf.scene.rotation.z += 4;
@@ -71,11 +72,17 @@ function addStar(){
 }
 Array(100).fill().forEach(addStar);
 
+controls.noPan = false;
+controls.maxDistance = controls.minDistance = 10;  
+controls.noZoom = true;
+
 // scroll me boys to cuba
 function moveCamera() {
-  const t = document.body.getBoundingClientRect().top;
+  scene.children[103].rotation.y += 0.02;
+  scene.children[103].rotation.z += 0.02;
+
 }
-document.body.onScroll = moveCamera
+document.body.onscroll = moveCamera;
 
 // infinte loop that calls the render method
 function animate() {
@@ -88,13 +95,8 @@ function animate() {
 }
 animate()
 
-window.addEventListener( 'resize', onWindowResize, false );
-
-function onWindowResize(){
-
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-
-    renderer.setSize( window.innerWidth, window.innerHeight );
-
-}
+// refresh page on resize
+window.addEventListener('resize', function () { 
+    "use strict";
+    window.location.reload(); 
+});
