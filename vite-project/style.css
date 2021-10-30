@@ -125,6 +125,7 @@ h3{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: medium;
   font-weight: bold;
+  width: auto;
 }
 
 .contact_btn:hover{
