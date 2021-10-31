@@ -80,7 +80,6 @@ controls.noZoom = true;
 function moveCamera() {
   scene.children[103].rotation.y += 0.02;
   scene.children[103].rotation.z += 0.02;
-
 }
 document.body.onscroll = moveCamera;
 
@@ -99,4 +98,37 @@ animate()
 window.addEventListener('resize', function () { 
     "use strict";
     window.location.reload(); 
+});
+
+// fancy cursor
+let mouseCursor = document.querySelector('.cursor');
+let navLinks = document.querySelectorAll('.navbar a');
+let button = document.querySelectorAll('.contact_btn');
+window.addEventListener('mousemove', cursor);
+
+function cursor(e){
+  mouseCursor.style.top = e.pageY + 'px';
+  mouseCursor.style.left = e.pageX + 'px';
+}
+
+navLinks.forEach(link => {
+  link.addEventListener('mousemove',() =>{
+    mouseCursor.classList.add('link-grow');
+    link.classList.add('hovered-link')
+  });
+  link.addEventListener('mouseleave',() =>{
+    mouseCursor.classList.remove('link-grow');
+    link.classList.remove('hovered-link')
+  });
+});
+
+button.forEach(link => {
+  link.addEventListener('mousemove',() =>{
+    mouseCursor.classList.add('link-grow');
+    link.classList.add('hovered-link')
+  });
+  link.addEventListener('mouseleave',() =>{
+    mouseCursor.classList.remove('link-grow');
+    link.classList.remove('hovered-link')
+  });
 });
