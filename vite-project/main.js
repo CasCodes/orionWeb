@@ -26,7 +26,7 @@ camera.position.setY(8);
 // 3d model
 const loader = new GLTFLoader();
 
-loader.load( 'recources/planetColored.glb', function ( gltf ) {
+loader.load( 'resources/planetColored.glb', function ( gltf ) {
   
   gltf.scene.rotation.y += 0.8;
   gltf.scene.rotation.z += 4;
