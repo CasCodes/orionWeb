@@ -20,6 +20,7 @@ html {
   background-position: center;
   max-width: 100%;
   overflow-x: hidden;
+  cursor: none;
 }
 body{
   margin: 0px;
@@ -41,7 +42,7 @@ body{
     padding: 14px 16px;
 }
 a:hover {
-    color: #2FB69D;
+    color: #E5AF3F;
 }
 .sticky {
     position: fixed;
@@ -164,7 +165,7 @@ h3{
 
 .sub-rect3{
   position: relative;
-  width: 200px;
+  width: 280px;
   height: auto;
   top: -55px;
   background: #1a1a1a;
